@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styling/home.css">
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+            <div class="logo">Sam Price<b></b></div>
+            <ul class="navItems">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello, I'm Sam</span>
+                <h1>a <span class="multiText">Designer</span></h1>
+                <p>Welcome to my portfolio. I’m Sam, a skilled and creative designer with a passion for creating responsive, user-friendly websites. I hope you enjoy looking at my designs as much as I enjoy making them!</p>
+                <div class="btns">
+                    <button onclick="location.href= 'portfolio.html';">Portfolio</button>
+                    <button onclick="location.href= 'contact.html';">Contact Me</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="images/splash.png" alt="Splash" id="splash">
+                    <img src="images/headshot.png" alt="Headshot" id="headshot">
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script>
+    const typingEffect = new Typed(".multiText",{
+        strings : ["Designer","Coder",],
+        loop : true,
+        typeSpeed : 50,
+        backSpeed : 50,
+        backDelay : 1500,
+        startDelay: 1000,
+        loopCount: Infinity, 
+        showCursor: true, 
+        cursorChar: '|', 
+        autoInsertCss: true,
+    })
+   </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+      />
+    <link rel="stylesheet" href="styling/contact.css"/>
+    <title>Contact</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <nav>
+          <div class="logo">Sam Price<b></b></div>
+          <ul class="navItems">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+          </ul>
+      </nav>
+  </div>
+      
+<div class="contact-container">
+  <form method ="POST" id="form" class="contact-left">
+    <div class="contact-left-title">
+        <h2>Get in touch</h2>
+        <hr>
+    </div>
+    <input type="hidden" name="access_key" value="145b79ea-51aa-4e5e-aa34-4dfa4fbc9cc4">
+    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+    <div class="h-captcha" data-captcha="true"></div>
+    <button type="submit">Submit</button>
+    <div id="result"></div>
+</form>
+<div class="contact-right">
+        <img src="images/mail.png" class="mailimg"/>
+  </div>
+</div>
+
+<script src="contact.js" defer></script>
+</body>
+</html>

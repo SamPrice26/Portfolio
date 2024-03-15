@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 10vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Align items vertically in the center */
+    background-color: #ffffff; /* Set background color for navigation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    position: fixed; /* Fixed position */
+    top: 0; /* Position at the top of the viewport */
+    width: 100%;
+    z-index: 1000; /* Ensure the navigation is above other content */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3d535f;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navItems {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+.navItems li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navItems li a {
+    font-size: 18px;
+    color: #3d535f;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navItems li a:hover {
+    color: #eb726a;
+}
+
+/* Centered composition for animations */
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Subtract the height of the navigation bar */
+}
+
+.animation-content {
+    text-align: center;
+    max-width: 800px; /* Adjust based on your preference */
+    padding: 20px;
+}

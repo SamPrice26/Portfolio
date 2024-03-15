@@ -1,0 +1,192 @@
+/* Importing font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body {
+    overflow: hidden;
+} */
+
+/* Container styling */
+.container {
+    width: 100%;
+    min-height: 10vh;
+    background-color: transparent;
+}
+
+/* Navigation bar styling */
+nav {
+  position: fixed; /* Fixed position */
+  top: 0; /* Position at the top of the page */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  line-height: 80px;
+  z-index: 111;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Navigation items styling */
+.navItems {
+    display: flex;
+}
+
+.navItems li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navItems li a {
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navItems li a:hover {
+    color: #E87956;
+}
+
+/* Global reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f1fbff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px; 
+    min-height: 100vh;
+}
+
+/* Wrapper */
+.wrapper {
+    max-width: var(--max-width);
+    margin-top: 100px; 
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* Section header */
+.section-header {
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-size: 55px;
+    color: #4d8073;
+    letter-spacing: 3px;
+}
+
+/* Main content */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 30px;
+    margin-top: 30px; 
+    margin: 0 auto; 
+}
+
+/* Box  */
+.box {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Image */
+.box img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Image text overlay */
+.img-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.9);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+/* Image text overlay on hover */
+.box:hover .img-text {
+    opacity: 1;
+}
+
+/* Content */
+.content {
+    padding: 10px;
+}
+
+/* Content heading*/
+.content h2 {
+    font-size: 24px;
+    color: var(--primary-color-dark);
+    margin-bottom: 10px;
+}
+
+/* Content paragraph */
+.content p {
+    font-size: 18px;
+    color: var(--text-light);
+}
+
+/* Box link styling */
+.box a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.box a:hover,
+.box a:focus {
+  color: inherit; /* Keep the color same on hover and focus */
+}
+
+.box a:active {
+  color: inherit; /* Keep the color same on click */
+}
+
+/* Media query smaller screens */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr; 
+    }
+}

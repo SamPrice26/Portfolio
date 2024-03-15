@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style for navigation bar */
+nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111; 
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navItems {
+    display: flex;
+}
+
+.navItems li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navItems li a {
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navItems li a:hover {
+    color: #eb726a;
+}
+
+/* Global body styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* About section container */
+.about-container {
+    text-align: center;
+    position: absolute;
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 3; 
+}
+
+/* Styles for the about section */
+.about-section {
+    max-width: 400px;
+    margin: 0 auto; 
+}
+
+.about-section h2 {
+    color: #4d8073; 
+    font-size: 40px;
+    font-weight: 800; /* Adjusted font weight */
+    width: 100%; /* Adjusted width to make it wider */
+    max-width: 500px; /* Set a maximum width to prevent it from becoming too wide */
+    margin: 0 auto;
+}
+
+.about-section p {
+    color: #313639; 
+    font-size: 18px;
+}
+
+/* Container for cup and steam */
+.container {
+    position: relative;
+}
+
+/* Styles for steam */
+#steam1 {
+    width: 220px;
+    height: 480px;
+    position: relative;
+    top: 40px; 
+}
+
+/* Styles for the steam animation */
+#anima1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 140%;
+    position: absolute;
+    top: -5px; 
+    left: 10px; 
+}
+
+#anima1 span {
+    position: relative;
+    margin: 0 2px 50px;
+    min-width: 12px;
+    height: 200px;
+    background: #fff; 
+    animation: animate 3s linear infinite;
+    opacity: 1;
+    filter: blur(15px);
+    animation-delay: calc(var(--i) * 1s);
+}
+
+/* Container for the cup */
+.cup-container {
+    position: absolute;
+    width: 500px;
+    top: 500px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: -1; 
+}
+
+/* Styles for the cup */
+#cup {
+    width: 500px;
+}
+
+/* Keyframes for steam animation */
+@keyframes animate {
+    0% {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50px) scaleX(3);
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-0px) scaleX(4);
+        opacity: 0;
+    }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    /* centers about*/
+    .about-container {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Makes about section wider  */
+    .about-section {
+        max-width: 80%;
+    }
+
+    /* position of cup-container */
+    .cup-container {
+        top: 70%; /* Move it down */
+    }
+
+    /* size of the cup image for smaller screens */
+    #cup {
+        width: 300px;
+    }
+
+    /*  size of the steam for smaller screens */
+    #steam1 {
+        width: 150px;
+        height: 320px;
+        top: 20px;
+    }
+
+    /* size of the steam animation for smaller screens */
+    #anima1 {
+        width: 120px;
+        height: 120%;
+    }
+
+    #anima1 span {
+        height: 100px;
+        margin: 0 2px 30px;
+        animation-delay: calc(var(--i) * 0.5s); /* animation delay */
+    }
+}

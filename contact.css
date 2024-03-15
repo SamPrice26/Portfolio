@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* body{
+  overflow: hidden;
+}  */
+
+.container {
+    width: 100%;
+    min-height: 10vh;
+    background-color: transparent;
+}
+
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+b {
+    font-size: 70px;
+    color: #4d8073;
+}
+
+
+.navItems {
+    display: flex;
+}
+
+
+.navItems li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+
+.navItems li a {
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+.navItems li a:hover {
+    color: #E87956;
+}
+
+.contact-container{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    z-index: 2;
+}
+.contact-left-title h2{
+    font-weight: 800;
+    color:#4d8073;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #4d8073;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height:50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #3d535f;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-inputs:focus{
+    border: 2px solid #E87956;
+    box-shadow: 0 4px 10px rgba(232, 121, 86, 0.6); 
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9; 
+}
+.contact-left button{
+    display:flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff; 
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#4d8073,#3d535f);
+    cursor: pointer;
+}
+ .mailimg{
+  position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200vw;
+    height: auto;
+    max-width:900px;
+} 
+
+
+
